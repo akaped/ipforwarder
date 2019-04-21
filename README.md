@@ -5,8 +5,10 @@ This little scripts allows to keep you updated to the IP addresses of all your s
 
 I execute it through cron setting my crontab to:
 
+```
 @reboot . ~/opt/ipforwarder/ipforwarder.sh > /dev/null
 0 * * * * . ~/opt/ipforwarder/ipforwarder.sh > /dev/null
+```
 
 In this way the script executes at every reboot and every hour. 
 
